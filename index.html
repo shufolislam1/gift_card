@@ -1,13 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style/index.scss">
-</head>
-<body>
-    
-    <script src="./assets/js/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novita Diamonds E-Gift Card</title>
+    <link rel="stylesheet" href="./assets/style/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="images">
+        <img
+          src="./assets/images/01 page image.jpg"
+          alt="E-Gift Card on Phone"
+        />
+        <img src="./assets/images/02 page image.jpg" alt="Gift Box" />
+        <img
+          src="./assets/images/03 image page.jpg"
+          alt="E-Gift Card Necklace"
+        />
+      </div>
+      <div>
+        <div class="upper-part">
+          <h1>Novita Diamonds E-Gift Card</h1>
+          <hr />
+          <p class="description">
+            On the lookout for the perfect gift? Give the gift of choice with a
+            Novita Diamonds gift card. Redeemable seamlessly, whether online or
+            in-store, anytime you please. ✨
+          </p>
+        </div>
+        <form class="gift-card-form">
+          <div class="form-group">
+            <label>1. Choose A Design</label>
+            <div class="design-options">
+              <label>
+                <input type="radio" name="design" value="pink" />
+                <img src="./assets/images/03 card .jpg" alt="Pink Design" />
+              </label>
+              <label>
+                <input type="radio" name="design" value="black" />
+                <img src="./assets/images/04 card.jpg" alt="Black Design" />
+              </label>
+              <label>
+                <input type="radio" name="design" value="gold" />
+                <img src="./assets/images/02 card.jpg" alt="Gold Design" />
+              </label>
+              <label>
+                <input type="radio" name="design" value="silver" />
+                <img src="./assets/images/01  card.jpg" alt="Silver Design" />
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>2. Choose An Amount</label>
+            <div class="amount-options">
+              <label>
+                <input type="radio" name="amount" value="100" />$100
+              </label>
+              <label>
+                <input type="radio" name="amount" value="250" />$250
+              </label>
+              <label>
+                <input type="radio" name="amount" value="500" />$500
+              </label>
+              <label>
+                <input type="radio" name="amount" value="1000" />$1,000
+              </label>
+              <label>
+                <input type="radio" name="amount" value="2000" />$2,000
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>3. Enter Delivery Details</label>
+            <div style="margin-left: 30px">
+              <label style="margin-top: 30px;" for="recipient-name">To:</label>
+              <input
+                type="text"
+                id="recipient-name"
+                name="recipient-name"
+                placeholder="Recipients Name"
+              />
+              <hr />
+              <input
+                type="email"
+                id="recipient-email"
+                name="recipient-email"
+                placeholder="Recipients Email"
+              />
+              <hr />
+              <input
+                type="email"
+                id="confirm-email"
+                name="confirm-email"
+                placeholder="Confirm Recipients Email"
+              />
+              <hr />
+              <div class="form-group">
+                <label style="margin-top: 30px; margin-bottom: 20px;" for="message">Message:</label>
+                <hr />
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write a Message"
+                  maxlength="450"
+                ></textarea>
+                <hr />
+              </div>
+
+              <div class="form-group">
+                <label for="send-date">Send on:</label>
+                <input type="date" id="send-date" name="send-date" />
+                <label for="send-date" class="placeholder">Pick a Date</label>
+                <hr />
+              </div>
+
+              <div class="form-group">
+                <label for="sender-name">Name:</label>
+                <input
+                  type="text"
+                  id="sender-name"
+                  name="sender-name"
+                  placeholder="Sender's Name"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+          <button type="submit">Add to Cart</button>
+          <p style="margin-left: -390px;">Terms & Conditions</p>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
