@@ -1,0 +1,9 @@
+<svg id="calendar-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <path id="Path_5327" data-name="Path 5327" d="M0,0H17V17H0Z" fill="none"/>
+  <path id="Path_5328" data-name="Path 5328" d="M9.313,16.333h-3.9A1.417,1.417,0,0,1,4,14.917v-8.5A1.417,1.417,0,0,1,5.417,5h8.5a1.417,1.417,0,0,1,1.417,1.417V9.6" transform="translate(-1.167 -1.458)" fill="none" stroke="#b7b7b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Path_5329" data-name="Path 5329" d="M16,3V5.833" transform="translate(-4.667 -0.875)" fill="none" stroke="#b7b7b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Path_5330" data-name="Path 5330" d="M8,3V5.833" transform="translate(-2.333 -0.875)" fill="none" stroke="#b7b7b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Path_5331" data-name="Path 5331" d="M4,11H15.333" transform="translate(-1.167 -3.208)" fill="none" stroke="#b7b7b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Path_5332" data-name="Path 5332" d="M17.125,17.125m-2.125,0A2.125,2.125,0,1,0,17.125,15,2.125,2.125,0,0,0,15,17.125" transform="translate(-4.375 -4.375)" fill="none" stroke="#b7b7b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Path_5333" data-name="Path 5333" d="M20.2,20.2l1.275,1.275" transform="translate(-5.892 -5.892)" fill="none" stroke="#b7b7b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</svg>
