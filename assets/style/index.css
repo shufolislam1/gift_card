@@ -40,22 +40,21 @@ h1 {
   margin-bottom: 40px;
 }
 
-.images {
+.top-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
-.images img {
-  width: 100%;
+.top-images img {
+  max-width: 100%;
   height: auto;
   box-sizing: border-box;
 }
 
-.images img:nth-child(3) {
+.top-images img:nth-child(3) {
   grid-column: 1;
   grid-row: 2;
-  margin-top: -300px;
 }
 
 .gift-card-form {
@@ -152,14 +151,14 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* Change to single column layout */
+    grid-template-columns: 1fr;
   }
-  .images {
+  .top-images {
     display: grid;
-    grid-template-columns: 1fr; /* Change to single column layout for images */
-    gap: 10px; /* Add gap between images */
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  .images img {
+  .top-images img {
     width: 100%; /* Ensure images take full width in single column layout */
     height: auto; /* Maintain aspect ratio */
   }
