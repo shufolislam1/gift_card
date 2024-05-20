@@ -105,14 +105,15 @@ hr{
         }
 
         input, textarea {
+            font-family: mreaves-book;
+            font-size: 17px;
+            margin: 0px 20px;
             width: 100%;
             padding: 10px;
-            margin-top: 5px;
             border: none;
             outline: none;
             color: #8c8b8b;
             font-weight: normal;
-            font-size: medium;
         }
 
         textarea {
@@ -135,7 +136,7 @@ hr{
         }
 
         .amount-options {
-            margin-top: 30px;
+            margin-top: 20px;
             display: flex;
             justify-content: space-between;
 
@@ -152,6 +153,10 @@ hr{
                     color: white;
                 }
             }
+        }
+        .input-options{
+            margin-top: 30px;
+            margin-left: 20px
         }
     }
 
