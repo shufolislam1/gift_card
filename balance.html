@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Check Gift Card Balance</title>
     <link rel="stylesheet" href="./assets/style/balance.css">
 </head>
 <body>
     <main>
         <section class="container">
             <div class="main-card">
-                <div>
-                    <img src="./assets/images/02 card.jpg" alt="E-GIFTCARD" srcset="">
+                <div class="image-container">
+                    <img src="./assets/images/02 card.jpg" alt="E-GIFTCARD">
                 </div>
-                <div>
-                    <h2>Check Balance</h2>
-                    <hr>
-                    <h3>Enter Card Number</h3>
-                    <div class="inner-card">
-                    <p>Card Number</p>
-                    <input type="text" name="" id="card-number" placeholder="Number">
-                    <hr>
+                <div class="form-container" id="form-container">
+                    <div id="check-balance-form">
+                        <h2>Check Balance</h2>
+                        <hr>
+                        <h3>Enter Card Number</h3>
+                        <div class="inner-card">
+                            <p>Card Number</p>
+                            <input type="text" id="card-number" placeholder="Number">
+                            <hr>
+                        </div>
+                        <button style="margin-top: 50px;" type="submit" onclick="checkBalance()">CHECK BALANCE</button>
                     </div>
-                    <button type="submit">CHECK BALANCE</button>
+                    <div class="loading" id="loading" style="display: none;">
+                        <img src="https://novaaus.manmadediamonds.com.au/images/loading.gif" alt="Loading">
+                    </div>
+                    <div class="balance-info" id="balance-info" style="display: none;">
+                        <h2>Available Balance</h2>
+                        <p id="balance-amount">$500</p>
+                        <p>E-Gift Card Number: <span id="card-number-display">5021119012341234</span></p>
+                        <p>Expiry: <span id="expiry-date">12/2026</span></p>
+                        <p>Status: <span id="status">Active</span></p>
+                    </div>
                 </div>
             </div>
         </section>

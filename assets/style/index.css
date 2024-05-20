@@ -6,12 +6,14 @@ body {
 }
 
 .upper-part {
-  max-width: 80%;
-  margin-left: 110px;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-left: 25px;
 }
 
-.upper-part h1 {
-  text-align: start;
+.upper-part hr {
+  color: pink;
+  margin-left: 11%;
 }
 
 .container {
@@ -19,6 +21,10 @@ body {
   margin: 10px;
   display: grid;
   grid-template-columns: 1100px 1fr;
+}
+
+hr {
+  color: lightgrey;
 }
 
 h1 {
@@ -72,6 +78,7 @@ h1 {
   padding: 10px;
   margin-top: 5px;
   border: none;
+  outline: none;
 }
 .gift-card-form .form-group textarea {
   resize: vertical;
@@ -155,5 +162,8 @@ h1 {
   .images img {
     width: 100%; /* Ensure images take full width in single column layout */
     height: auto; /* Maintain aspect ratio */
+  }
+  .description {
+    text-align: start;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -7,13 +7,19 @@ body {
     padding: 0;
 }
 .upper-part{
-    max-width: 80%;
-    margin-left: 110px;
+    width: 80%;
+    // text-align: center;
+    margin-bottom: 20px;
+    // display: block;
+    margin-left: 25px;
     // padding-bottom: 40px;
 }
-.upper-part h1{
-    text-align: start;
+
+.upper-part hr{
+    color: pink;
+    margin-left: 11%;
 }
+
 .container {
     background-color: #fff;
     margin: 10px;
@@ -21,6 +27,9 @@ body {
     // grid-template-rows: auto 1fr auto;
     grid-template-columns: 1100px 1fr;
     // grid-template-columns: repeat(2, 1fr);
+}
+hr{
+    color: lightgrey;
 }
 
 h1 {
@@ -75,7 +84,7 @@ h1 {
             padding: 10px;
             margin-top: 5px;
             border: none;
-            
+            outline: none;
         }
 
         textarea {
@@ -176,6 +185,9 @@ h1 {
     .images img {
       width: 100%; /* Ensure images take full width in single column layout */
       height: auto; /* Maintain aspect ratio */
+    }
+    .description{
+        text-align: start;
     }
   }
 
