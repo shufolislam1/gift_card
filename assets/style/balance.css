@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "mreaves-bold";
+  src: url("../fonts/MrEavesXLModOT-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mreaves-book";
+  src: url("../fonts/MrEavesXLModOT-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mreaves-light";
+  src: url("../fonts/MrEavesXLModOT-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mreaves-regular";
+  src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("truetype");
+}
 body {
   max-width: 1440px;
   font-family: "mreaves-regular";
