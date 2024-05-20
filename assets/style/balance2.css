@@ -2,28 +2,28 @@
   font-family: "mreaves-bold";
   src: url("../fonts/MrEavesXLModOT-Bold.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "mreaves-book";
   src: url("../fonts/MrEavesXLModOT-Book.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "mreaves-light";
   src: url("../fonts/MrEavesXLModOT-Light.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "mreaves-regular";
   src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("truetype");
 }
-
 body {
   max-width: 1440px;
   font-family: "mreaves-regular";
   background-color: #fff;
   margin: auto;
   padding: 0;
+}
+
+hr {
+  color: antiquewhite;
 }
 
 .container {
@@ -47,143 +47,70 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .form-container {
   padding: 20px;
-
-  h2 {
-    font-family: mreaves-bold;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 16px;
-    margin-top: 20px;
-  }
 }
-
-.inner-card {
-  margin-top: 20px;
-  margin-left: 20px;
-
-  p {
-    margin: 0;
-    font-weight: bolder;
-    font-family: mreaves-light;
-    font-size: 16px;
-  }
-
-  input {
-    font-family: mreaves-book;
-    font-size: 17px;
-    margin: 0px 20px;
-    color: #8c8b8b;
-    width: calc(100% - 20px);
-    margin-top: 10px;
-    border: none;
-    box-shadow: none;
-  }
-
-  hr {
-    width: 80%;
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 0;
-  }
-}
-
-hr {
-  color: antiquewhite;
-}
-
-button[type="submit"] {
-  margin-top: 50px;
-  font-size: 16px;
+.form-container h2 {
   font-family: mreaves-bold;
-  display: block;
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 83%;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-
-  img {
-    width: 50%; // Adjust size as needed
-    height: 50%;
-  }
+.form-container .balance-info {
+  font-size: 17px;
+  font-weight: bolder;
+  margin-left: 15px;
+  line-height: 10px;
 }
-
-.balance-info {
-  padding: 20px;
-  background-color: #fff;
-  border-left: 1px solid #ddd;
-
-  h2 {
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 1em;
-    margin: 5px 0;
-  }
+.form-container .balance-info h1 {
+  font-size: large;
+  margin-top: 23px;
+}
+.form-container .balance-amount {
+  margin-left: 22px;
+  font-family: mreaves-bold;
+  font-size: x-large;
+  margin-bottom: 35px;
 }
 
 @media only screen and (max-width: 1440px) {
   .main-card {
     grid-template-columns: 1fr 1fr;
   }
-
   .form-container,
   .image-container {
     padding: 15px;
   }
 }
-
 @media only screen and (max-width: 991px) {
   .main-card {
     grid-template-columns: 1fr;
   }
-
   .form-container,
   .image-container {
     padding: 10px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .main-card {
     grid-template-columns: 1fr;
   }
-
   .form-container,
   .image-container {
     padding: 10px;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .main-card {
     grid-template-columns: 1fr;
   }
-
   .form-container,
   .image-container {
     padding: 5px;
   }
-}
+}/*# sourceMappingURL=balance2.css.map */

@@ -25,7 +25,9 @@ body {
   margin: auto;
   padding: 0;
 }
-
+hr {
+  color: antiquewhite;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -63,84 +65,25 @@ body {
     margin-bottom: 10px;
   }
 
-  h3 {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-}
-
-.inner-card {
-  margin-top: 20px;
-  margin-left: 20px;
-
-  p {
-    margin: 0;
-    font-weight: bolder;
-    font-family: mreaves-light;
-    font-size: 16px;
-  }
-
-  input {
-    font-family: mreaves-book;
+  // h3 {
+  //   font-size: 16px;
+  //   margin-top: 20px;
+  // }
+  .balance-info {
     font-size: 17px;
-    margin: 0px 20px;
-    color: #8c8b8b;
-    width: calc(100% - 20px);
-    margin-top: 10px;
-    border: none;
-    box-shadow: none;
+    font-weight: bolder;
+    margin-left: 15px;
+    line-height: 10px;
+    h1 {
+      font-size: large;
+      margin-top: 23px;
+    }
   }
-
-  hr {
-    width: 80%;
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 0;
-  }
-}
-
-hr {
-  color: antiquewhite;
-}
-
-button[type="submit"] {
-  margin-top: 50px;
-  font-size: 16px;
-  font-family: mreaves-bold;
-  display: block;
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 83%;
-}
-
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-
-  img {
-    width: 50%; // Adjust size as needed
-    height: 50%;
-  }
-}
-
-.balance-info {
-  padding: 20px;
-  background-color: #fff;
-  border-left: 1px solid #ddd;
-
-  h2 {
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 1em;
-    margin: 5px 0;
+  .balance-amount {
+    margin-left: 22px;
+    font-family: mreaves-bold;
+    font-size: x-large;
+    margin-bottom: 35px;
   }
 }
 

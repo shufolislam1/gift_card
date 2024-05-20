@@ -44,7 +44,6 @@ body {
   justify-content: center;
   padding: 20px;
 }
-
 .image-container img {
   max-width: 100%;
   height: auto;
@@ -53,14 +52,13 @@ body {
 .form-container {
   padding: 20px;
 }
-
 .form-container h2 {
-  font-size: 1.5em;
+  font-family: mreaves-bold;
+  font-size: 24px;
   margin-bottom: 10px;
 }
-
 .form-container h3 {
-  font-size: 1em;
+  font-size: 16px;
   margin-top: 20px;
 }
 
@@ -68,25 +66,27 @@ body {
   margin-top: 20px;
   margin-left: 20px;
 }
-
 .inner-card p {
   margin: 0;
-  font-weight: bold;
+  font-weight: bolder;
+  font-family: mreaves-light;
+  font-size: 16px;
 }
-
 .inner-card input {
+  font-family: mreaves-book;
+  font-size: 17px;
+  margin: 0px 20px;
+  color: #8c8b8b;
   width: calc(100% - 20px);
-  padding: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
   border: none;
   box-shadow: none;
 }
-
 .inner-card hr {
   width: 80%;
   border: none;
   border-top: 1px solid #ddd;
-  margin: 0px;
+  margin: 0;
 }
 
 hr {
@@ -94,15 +94,16 @@ hr {
 }
 
 button[type=submit] {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: mreaves-bold;
   display: block;
   background-color: black;
   color: white;
-  font-size: 1.2em;
-  margin-top: 20px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  width: 80%;
+  width: 83%;
 }
 
 .loading {
@@ -111,9 +112,8 @@ button[type=submit] {
   align-items: center;
   padding: 20px;
 }
-
 .loading img {
-  width: 50%; /* Adjust size as needed */
+  width: 50%;
   height: 50%;
 }
 
@@ -122,22 +122,48 @@ button[type=submit] {
   background-color: #fff;
   border-left: 1px solid #ddd;
 }
-
 .balance-info h2 {
   font-size: 1em;
   margin-bottom: 10px;
 }
-
 .balance-info p {
   font-size: 1em;
   margin: 5px 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1440px) {
+  .main-card {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-container,
+  .image-container {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
   .main-card {
     grid-template-columns: 1fr;
   }
-  .form-container, .image-container {
+  .form-container,
+  .image-container {
     padding: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-card {
+    grid-template-columns: 1fr;
+  }
+  .form-container,
+  .image-container {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main-card {
+    grid-template-columns: 1fr;
+  }
+  .form-container,
+  .image-container {
+    padding: 5px;
   }
 }/*# sourceMappingURL=balance.css.map */
