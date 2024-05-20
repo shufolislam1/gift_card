@@ -1,36 +1,59 @@
+@font-face {
+  font-family: "mreaves-bold";
+  src: url("../fonts/MrEavesXLModOT-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mreaves-book";
+  src: url("../fonts/MrEavesXLModOT-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mreaves-light";
+  src: url("../fonts/MrEavesXLModOT-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mreaves-regular";
+  src: url("../fonts/MrEavesXLModOT-Reg.ttf") format("truetype");
+}
 body {
-  font-family: "Arial", sans-serif;
+  max-width: 1440px;
+  font-family: "mreaves-regular";
   background-color: #fff;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-}
-
-.upper-part {
-  width: 80%;
-  margin-bottom: 20px;
-  margin-left: 25px;
-}
-
-.upper-part hr {
-  color: pink;
-  margin-left: 11%;
 }
 
 .container {
   background-color: #fff;
   margin: 10px;
-  display: grid;
-  grid-template-columns: 1100px 1fr;
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: pink;
+  margin-left: 10%;
+}
+
+.right-part {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 34%;
+}
+.right-part .upper-part {
+  border-bottom: 1px solid pink;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 hr {
-  color: lightgrey;
+  color: rgb(250, 247, 247);
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+.bottom {
+  margin-left: 15%;
 }
 
 .description {
@@ -43,6 +66,11 @@ h1 {
 .top-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 66%;
   gap: 10px;
 }
 
@@ -50,11 +78,7 @@ h1 {
   max-width: 100%;
   height: auto;
   box-sizing: border-box;
-}
-
-.top-images img:nth-child(3) {
-  grid-column: 1;
-  grid-row: 2;
+  margin-top: 30px;
 }
 
 .gift-card-form {
@@ -64,13 +88,14 @@ h1 {
 }
 .gift-card-form .form-group {
   width: 100%;
-  max-width: 600px;
   margin-bottom: 20px;
 }
-.gift-card-form .form-group label {
+.gift-card-form .form-group > label {
+  font-family: mreaves-regular;
   display: block;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 .gift-card-form .form-group input, .gift-card-form .form-group textarea {
   width: 100%;
@@ -78,9 +103,12 @@ h1 {
   margin-top: 5px;
   border: none;
   outline: none;
+  color: #8c8b8b;
+  font-weight: normal;
+  font-size: medium;
 }
 .gift-card-form .form-group textarea {
-  resize: vertical;
+  resize: none;
   height: 100px;
 }
 .gift-card-form .form-group .design-options {
@@ -89,80 +117,38 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.gift-card-form .form-group .design-options label {
-  flex: 1;
-  cursor: pointer;
-  margin-right: 10px;
-  text-align: center;
-}
-.gift-card-form .form-group .design-options label img {
+.gift-card-form .form-group .design-options img {
   max-width: 100%;
   border: 2px solid transparent;
   border-radius: 5px;
   transition: border-color 0.3s;
-}
-.gift-card-form .form-group .design-options label input[type=radio] {
-  display: none;
-}
-.gift-card-form .form-group .design-options label input[type=radio]:checked + img {
-  border-color: #ff5a5f;
-}
-.gift-card-form .form-group .design-options label:last-child {
-  margin-right: 0;
 }
 .gift-card-form .form-group .amount-options {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
-.gift-card-form .form-group .amount-options label {
+.gift-card-form .form-group .amount-options div {
   flex: 1;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 10px;
   margin-right: 10px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.gift-card-form .form-group .amount-options label input[type=radio] {
-  display: none;
-}
-.gift-card-form .form-group .amount-options label input[type=radio]:checked + span {
-  background-color: #ff5a5f;
-  color: #fff;
-}
-.gift-card-form .form-group .amount-options label:first-child {
+.gift-card-form .form-group .amount-options div.selected {
   background-color: black;
   color: white;
-}
-.gift-card-form .form-group .amount-options label:last-child {
-  margin-right: 0;
 }
 .gift-card-form button[type=submit] {
   background-color: black;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-left: 30px;
+  margin-bottom: 20px;
   padding: 10px 20px;
-  width: 70%;
+  width: 100%;
   border: none;
   cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-  .top-images {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .top-images img {
-    width: 100%; /* Ensure images take full width in single column layout */
-    height: auto; /* Maintain aspect ratio */
-  }
-  .description {
-    text-align: start;
-  }
 }/*# sourceMappingURL=index.css.map */

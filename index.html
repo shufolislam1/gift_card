@@ -9,20 +9,24 @@
   <body>
     <div class="container">
       <div class="top-images">
-        <img
-          src="./assets/images/01 page image.jpg"
-          alt="E-Gift Card on Phone"
-        />
-        <img src="./assets/images/02 page image.jpg" alt="Gift Box" />
-        <img
-          src="./assets/images/03 image page.jpg"
-          alt="E-Gift Card Necklace"
-        />
+        <div class="top-images1">
+          <img
+            src="./assets/images/01 page image.jpg"
+            alt="E-Gift Card on Phone"
+          />
+
+          <img
+            src="./assets/images/03 image page.jpg"
+            alt="E-Gift Card Necklace"
+          />
+        </div>
+        <div class="top-images2">
+          <img src="./assets/images/02 page image.jpg" alt="Gift Box" />
+        </div>
       </div>
-      <div>
+      <div class="right-part">
         <div class="upper-part">
           <h1>Novita Diamonds E-Gift Card</h1>
-          <hr />
         </div>
         <form class="gift-card-form">
           <div class="form-group">
@@ -33,43 +37,22 @@
             </p>
             <label>1. Choose A Design</label>
             <div class="design-options">
-              <label>
-                <input type="radio" name="design" value="pink" />
-                <img src="./assets/images/03 card .jpg" alt="Pink Design" />
-              </label>
-              <label>
-                <input type="radio" name="design" value="black" />
-                <img src="./assets/images/04 card.jpg" alt="Black Design" />
-              </label>
-              <label>
-                <input type="radio" name="design" value="gold" />
-                <img src="./assets/images/02 card.jpg" alt="Gold Design" />
-              </label>
-              <label>
-                <input type="radio" name="design" value="silver" />
-                <img src="./assets/images/01  card.jpg" alt="Silver Design" />
-              </label>
+              <img src="./assets/images/03 card .jpg" alt="Pink Design" />
+              <img src="./assets/images/04 card.jpg" alt="Black Design" />
+              <img src="./assets/images/02 card.jpg" alt="Gold Design" />
+              <img src="./assets/images/01  card.jpg" alt="Silver Design" />
             </div>
           </div>
 
           <div class="form-group">
             <label>2. Choose An Amount</label>
             <div class="amount-options">
-              <label>
-                <input type="radio" name="amount" value="100" />$100
-              </label>
-              <label>
-                <input type="radio" name="amount" value="250" />$250
-              </label>
-              <label>
-                <input type="radio" name="amount" value="500" />$500
-              </label>
-              <label>
-                <input type="radio" name="amount" value="1000" />$1,000
-              </label>
-              <label>
-                <input type="radio" name="amount" value="2000" />$2,000
-              </label>
+              <div class="selected">$100</div>
+              <div>$250</div>
+              <div>$500</div>
+              <div>$1000</div>
+              <div>$2000</div>
+              
             </div>
           </div>
 
@@ -106,6 +89,7 @@
                   name="message"
                   placeholder="Write a Message"
                   maxlength="450"
+                  draggable="false"
                 ></textarea>
                 <hr />
               </div>
@@ -129,9 +113,9 @@
               </div>
             </div>
           </div>
-          <button type="submit">Add to Cart</button>
-          <p>Terms & Conditions</p>
+          <button type="submit">ADD TO CART</button>
         </form>
+        <a class="bottom">Terms & Conditions</a>
       </div>
     </div>
   </body>
