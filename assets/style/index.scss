@@ -52,10 +52,13 @@ body {
 }
 
 hr{
+    width: 96%;
     color: rgb(250, 247, 247);
 }
 .bottom{
-    margin-left: 15%;
+    margin-right: auto;
+    margin-left: 15px;
+    
 }
 // h1 {
 //     text-align: center;
@@ -91,6 +94,7 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 15px;
 
     .form-group {
         width: 100%;
@@ -102,14 +106,23 @@ hr{
             font-weight: normal;
             margin-bottom: 10px;
             font-size: 18px;
+            margin-top: 20px;
         }
-
+        .inner-form{
+            font-family: mreaves-book;
+            font-size: 16px;
+        }
+        .form-msg{
+            font-family: mreaves-book;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
         input, textarea {
             font-family: mreaves-book;
             font-size: 17px;
             margin: 0px 20px;
             width: 100%;
-            padding: 10px;
             border: none;
             outline: none;
             color: #8c8b8b;
@@ -157,6 +170,12 @@ hr{
         .input-options{
             margin-top: 30px;
             margin-left: 20px
+        }
+        .message_limit{
+            display: block;
+            text-align: right;
+            color:#D2D1D1;
+            margin-right: 10px;
         }
     }
 
