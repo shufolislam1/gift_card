@@ -31,22 +31,19 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap;
 }
-.horizontal-line {
-  width: 100%;
-  height: 1px;
-  background-color: pink;
-  margin-left: 10%;
-}
+// .horizontal-line {
+//   width: 100%;
+//   height: 1px;
+//   background-color: pink;
+//   margin-left: 10%;
+// }
 .right-part {
-  // padding-left: 1rem;
-  // padding-right: 1rem;
   width: 34%;
 
   .upper-part {
     border-bottom: 1px solid pink;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     font-size: 1rem;
     font-weight: 200;
   }
@@ -92,7 +89,7 @@ hr {
 .top-images img {
   max-width: 100%;
   height: auto;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   margin-top: 30px;
 }
 
@@ -165,15 +162,19 @@ hr {
         font-size: 15px;
         flex: 1;
         border: 1px solid black;
-        padding: 10px;
+        padding: 8px 0px;
         margin-right: 10px;
         text-align: center;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, color 0.3s;
         &.selected {
           background-color: $button-color;
           color: white;
         }
+      }
+      div:hover {
+        background-color: $button-color; /* Change background color on hover */
+        color: white; /* Change text color on hover */
       }
     }
     .input-options {
