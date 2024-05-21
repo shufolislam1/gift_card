@@ -57,11 +57,12 @@ hr {
   padding: 20px;
 }
 .form-container h2 {
-  font-family: mreaves-bold;
-  font-size: 24px;
+  font-family: mreaves-regular;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 .form-container .balance-info {
+  font-family: mreaves-book;
   font-size: 17px;
   font-weight: bolder;
   margin-left: 15px;

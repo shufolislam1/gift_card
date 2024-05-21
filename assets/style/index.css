@@ -27,6 +27,7 @@ body {
   margin: 10px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .horizontal-line {
@@ -37,8 +38,6 @@ body {
 }
 
 .right-part {
-  padding-left: 1rem;
-  padding-right: 1rem;
   width: 34%;
 }
 .right-part .upper-part {
@@ -55,7 +54,8 @@ hr {
 
 .bottom {
   margin-right: auto;
-  margin-left: 15px;
+  text-decoration: none;
+  color: black;
 }
 
 .description {
@@ -66,14 +66,17 @@ hr {
 }
 
 .top-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
   width: 66%;
   gap: 10px;
+}
+.top-images > div {
+  display: flex;
+  gap: 10px;
+}
+.top-images > div > img {
+  width: 50%;
 }
 
 .top-images img {
@@ -87,7 +90,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 15px;
+  padding: 0px 15px;
 }
 .gift-card-form .form-group {
   width: 100%;
@@ -116,7 +119,7 @@ hr {
   font-family: mreaves-book;
   font-size: 17px;
   margin: 0px 20px;
-  width: 100%;
+  width: 93%;
   border: none;
   outline: none;
   color: #8c8b8b;
@@ -159,8 +162,7 @@ hr {
   color: white;
 }
 .gift-card-form .form-group .input-options {
-  margin-top: 30px;
-  margin-left: 20px;
+  padding: 0px 20px 0px 20px;
 }
 .gift-card-form .form-group .message_limit {
   display: block;
@@ -173,7 +175,6 @@ hr {
   background-color: black;
   color: white;
   font-size: 18px;
-  margin-left: 30px;
   margin-bottom: 20px;
   padding: 10px 20px;
   width: 100%;
