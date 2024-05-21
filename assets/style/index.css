@@ -27,7 +27,7 @@ body {
   margin: 10px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
 }
 
 .right-part {
@@ -35,8 +35,9 @@ body {
 }
 .right-part .upper-part {
   border-bottom: 1px solid pink;
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: mreaves-bold;
 }
 
 hr {
@@ -74,7 +75,7 @@ hr {
 .top-images img {
   max-width: 100%;
   height: auto;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .gift-card-form {
