@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .horizontal-line {
@@ -236,8 +237,11 @@ hr {
   .top-images {
     width: 100%;
   }
-  .top-images img {
+  .top-images1 img {
     margin-top: 15px;
+  }
+  .top-images2 img {
+    display: none;
   }
   .gift-card-form .form-group .design-options {
     grid-template-columns: repeat(3, 1fr);
