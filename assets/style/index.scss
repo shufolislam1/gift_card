@@ -153,6 +153,8 @@ hr {
       justify-content: space-between;
 
       div {
+        font-family: mreaves-bold;
+        font-size: 15px;
         flex: 1;
         border: 1px solid black;
         padding: 10px;
@@ -179,9 +181,10 @@ hr {
   }
 
   button[type="submit"] {
+    font-family: mreaves-bold;
     background-color: $button-color;
     color: white;
-    font-size: 1em;
+    font-size: 18px;
     margin-left: 30px;
     margin-bottom: 20px;
     padding: 10px 20px;
