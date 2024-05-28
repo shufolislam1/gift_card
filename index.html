@@ -28,7 +28,7 @@
           <h2>Novita Diamonds E-Gift Card</h2>
         </div>
         <form class="gift-card-form">
-          <div class="form-group">
+          <div class="upper-form-group">
             <p class="description">
               On the lookout for the perfect gift? Give the gift of choice with a
               Novita Diamonds gift card. Redeemable seamlessly, whether online or
@@ -43,46 +43,47 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="amount-form-group">
             <label>2. Choose An Amount</label>
             <div class="amount-options">
               <div class="selected">$100</div>
-              <div>$250</div>
-              <div>$500</div>
-              <div>$1000</div>
-              <div>$2000</div>
-              
+              <div>AU $250</div>
+              <div>AU $500</div>
+              <div>AU $1000</div>
+              <div>AU $2000</div>
             </div>
           </div>
 
           <div class="form-group">
             <label>3. Enter Delivery Details</label>
             <div class="input-options">
-              <label class="inner-form" for="recipient-name">To:</label>
-              <input
-                type="text"
-                id="recipient-name"
-                name="recipient-name"
-                placeholder="Recipients Name"
-              />
-              <hr />
-              <input
-                type="email"
-                id="recipient-email"
-                name="recipient-email"
-                placeholder="Recipients Email"
-              />
-              <hr />
-              <input
-                type="email"
-                id="confirm-email"
-                name="confirm-email"
-                placeholder="Confirm Recipients Email"
-              />
-              <hr />
-              <div class="form-group">
+              <div class="upper-form">
+                <label class="inner-form" for="recipient-name">To:</label>
+                <input
+                  type="text"
+                  id="recipient-name"
+                  name="recipient-name"
+                  placeholder="Recipients Name"
+                />
+                
+                <input
+                  type="email"
+                  id="recipient-email"
+                  name="recipient-email"
+                  placeholder="Recipients Email"
+                />
+                
+                <input
+                  type="email"
+                  id="confirm-email"
+                  name="confirm-email"
+                  placeholder="Confirm Recipients Email"
+                />
+              </div>
+              
+              <div class="text-msg">
                 <label class="form-msg" for="message">Message:</label>
-                <hr />
+                
                 <textarea
                   id="message"
                   name="message"
@@ -91,17 +92,16 @@
                   draggable="false"
                 ></textarea>
                 <span class="message_limit">0/430</span>
-                <hr />
+                
               </div>
 
-              <div class="form-group">
+              <div class="send-on">
                 <label  class="inner-form" for="send-date">Send on:</label>
                 <input type="date" id="send-date" name="send-date" />
                 <!-- <label for="send-date" class="placeholder">Pick a Date</label> -->
-                <hr />
               </div>
 
-              <div class="form-group">
+              <div class="name-input">
                 <label  class="inner-form" for="sender-name">Name:</label>
                 <input
                   type="text"
@@ -109,7 +109,6 @@
                   name="sender-name"
                   placeholder="Sender's Name"
                 />
-                <hr />
               </div>
             </div>
           </div>

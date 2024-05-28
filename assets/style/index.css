@@ -30,34 +30,6 @@ body {
   gap: 40px;
 }
 
-.right-part {
-  width: 34%;
-}
-.right-part .upper-part {
-  border-bottom: 1px solid pink;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: mreaves-bold;
-}
-
-hr {
-  width: 96%;
-  color: rgb(250, 247, 247);
-}
-
-.bottom {
-  margin-right: auto;
-  text-decoration: none;
-  color: black;
-}
-
-.description {
-  text-align: start;
-  color: #666;
-  font-size: 1.1em;
-  margin-bottom: 40px;
-}
-
 .top-images {
   display: flex;
   flex-direction: column;
@@ -66,7 +38,6 @@ hr {
 }
 .top-images > div {
   display: flex;
-  gap: 10px;
 }
 .top-images > div > img {
   width: 50%;
@@ -78,17 +49,25 @@ hr {
   margin-top: 10px;
 }
 
-.gift-card-form {
+.right-part {
+  width: 34%;
+}
+.right-part .upper-part {
+  border-bottom: 1px solid pink;
+  font-size: 16px;
+  font-family: mreaves-bold;
+}
+.right-part .upper-part h2 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.right-part .gift-card-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 15px;
 }
-.gift-card-form .form-group {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.gift-card-form .form-group > label {
+.right-part .gift-card-form .upper-form-group > label {
   font-family: mreaves-regular;
   display: block;
   font-weight: normal;
@@ -96,86 +75,151 @@ hr {
   font-size: 18px;
   margin-top: 20px;
 }
-.gift-card-form .form-group .inner-form {
-  font-family: mreaves-book;
+.right-part .gift-card-form .upper-form-group .description {
+  text-align: start;
   font-size: 16px;
+  margin-bottom: 40px;
+  width: 92%;
 }
-.gift-card-form .form-group .form-msg {
-  font-family: mreaves-book;
-  font-size: 16px;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-.gift-card-form .form-group input,
-.gift-card-form .form-group textarea {
-  font-family: mreaves-book;
-  font-size: 17px;
-  margin: 0px 20px;
-  width: 93%;
-  border: none;
-  outline: none;
-  color: #8c8b8b;
-  font-weight: normal;
-}
-.gift-card-form .form-group textarea {
-  resize: none;
-  height: 100px;
-}
-.gift-card-form .form-group .design-options {
-  margin-top: 30px;
+.right-part .gift-card-form .upper-form-group .design-options {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.gift-card-form .form-group .design-options img {
+.right-part .gift-card-form .upper-form-group .design-options img {
+  cursor: pointer;
   max-width: 100%;
+  border-radius: 7px;
   border: 2px solid transparent;
-  border-radius: 5px;
-  transition: border-color 0.3s;
 }
-.gift-card-form .form-group .amount-options {
+.right-part .gift-card-form .upper-form-group .design-options img:hover {
+  border: 2px solid #F5BAB9;
+}
+.right-part .gift-card-form .amount-form-group {
+  align-self: normal;
+}
+.right-part .gift-card-form .amount-form-group > label {
+  font-family: mreaves-regular;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.right-part .gift-card-form .amount-form-group .amount-options {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
-.gift-card-form .form-group .amount-options div {
+.right-part .gift-card-form .amount-form-group .amount-options div {
   font-family: mreaves-bold;
   font-size: 15px;
   flex: 1;
   border: 1px solid black;
   padding: 8px 0px;
-  margin-right: 10px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-.gift-card-form .form-group .amount-options div.selected {
+.right-part .gift-card-form .amount-form-group .amount-options div.selected {
   background-color: black;
   color: white;
 }
-.gift-card-form .form-group .amount-options div:hover {
+.right-part .gift-card-form .amount-form-group .amount-options div:hover {
   background-color: black; /* Change background color on hover */
   color: white; /* Change text color on hover */
 }
-.gift-card-form .form-group .input-options {
-  padding: 0px 20px 0px 20px;
+.right-part .gift-card-form .form-group {
+  width: 100%;
+  margin-top: 30px;
 }
-.gift-card-form .form-group .message_limit {
+.right-part .gift-card-form .form-group > label {
+  font-family: mreaves-regular;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.right-part .gift-card-form .form-group .inner-form {
+  font-family: mreaves-book;
+  font-size: 16px;
+}
+.right-part .gift-card-form .form-group .form-msg {
+  font-family: mreaves-book;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.right-part .gift-card-form .form-group input,
+.right-part .gift-card-form .form-group textarea {
+  font-family: mreaves-regular;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 6px 0px;
+  width: 93%;
+  border: none;
+  outline: none;
+  font-weight: normal;
+}
+.right-part .gift-card-form .form-group input {
+  color: #495057;
+}
+.right-part .gift-card-form .form-group textarea {
+  resize: none;
+  height: 100px;
+  padding: 2px 16px;
+  border-top: 1px solid #d3d3d3;
+}
+.right-part .gift-card-form .form-group input::-moz-placeholder, .right-part .gift-card-form .form-group textarea::-moz-placeholder {
+  color: #d5d5d5;
+}
+.right-part .gift-card-form .form-group input::placeholder,
+.right-part .gift-card-form .form-group textarea::placeholder {
+  color: #d5d5d5;
+}
+.right-part .gift-card-form .form-group .input-options {
+  padding: 0px 20px;
+}
+.right-part .gift-card-form .form-group .input-options .upper-form {
+  margin-top: 20px;
+}
+.right-part .gift-card-form .form-group .input-options .text-msg {
+  margin-top: 15px;
+}
+.right-part .gift-card-form .form-group .input-options .send-on {
+  margin-top: 15px;
+}
+.right-part .gift-card-form .form-group .input-options .name-input {
+  margin-top: 15px;
+}
+.right-part .gift-card-form .form-group .input-options input {
+  border-bottom: 1px solid #d3d3d3;
+  padding: 2px 16px;
+}
+.right-part .gift-card-form .text-msg .message_limit {
   display: block;
   text-align: right;
   color: #d2d1d1;
-  margin-right: 10px;
+  border-bottom: 1px solid #d3d3d3;
 }
-.gift-card-form button[type=submit] {
+.right-part .gift-card-form button[type=submit] {
   font-family: mreaves-bold;
   background-color: black;
   color: white;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
   padding: 10px 20px;
   width: 100%;
   border: none;
   cursor: pointer;
+}
+
+.bottom {
+  margin-right: auto;
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 1440px) {

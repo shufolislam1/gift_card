@@ -1,4 +1,9 @@
 $button-color: black;
+$general_pink: #F5BAB9;
+$light_pink: #FCECEC;
+$link_color : #FF9D9B;
+$semi_light_pink: #FEF8F8;
+$filter_background :#FDF7F7;
 @font-face {
   font-family: "mreaves-bold";
   src: url("../fonts/MrEavesXLModOT-Bold.ttf") format("truetype");
@@ -33,34 +38,6 @@ body {
   gap: 40px;
 }
 
-.right-part {
-  width: 34%;
-
-  .upper-part {
-    border-bottom: 1px solid pink;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: mreaves-bold;
-  }
-}
-
-hr {
-  width: 96%;
-  color: rgb(250, 247, 247);
-}
-.bottom {
-  margin-right: auto;
-  text-decoration: none;
-  color: $button-color;
-}
-
-
-.description {
-  text-align: start;
-  color: #666;
-  font-size: 1.1em;
-  margin-bottom: 40px;
-}
 
 .top-images {
   display: flex;
@@ -69,7 +46,7 @@ hr {
   gap: 10px;
   >div{
     display: flex;
-    gap: 10px;
+    // gap: 10px;
     >img{
       width: 50%;
     }
@@ -81,114 +58,198 @@ hr {
   margin-top: 10px;
 }
 
-.gift-card-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 15px;
 
-  .form-group {
-    width: 100%;
-    margin-bottom: 20px;
-
-    > label {
-      font-family: mreaves-regular;
-      display: block;
-      font-weight: normal;
-      margin-bottom: 10px;
-      font-size: 18px;
-      margin-top: 20px;
-    }
-    .inner-form {
-      font-family: mreaves-book;
-      font-size: 16px;
-    }
-    .form-msg {
-      font-family: mreaves-book;
-      font-size: 16px;
-      margin-top: 25px;
-      margin-bottom: 15px;
-    }
-    input,
-    textarea {
-      font-family: mreaves-book;
-      font-size: 17px;
-      margin: 0px 20px;
-      width: 93%;
-      border: none;
-      outline: none;
-      color: #8c8b8b;
-      font-weight: normal;
-    }
-
-    textarea {
-      resize: none;
-      height: 100px;
-    }
-
-    .design-options {
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-
-      img {
-        max-width: 100%;
-        border: 2px solid transparent;
-        border-radius: 5px;
-        transition: border-color 0.3s;
-      }
-    }
-
-    .amount-options {
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between;
-
-      div {
-        font-family: mreaves-bold;
-        font-size: 15px;
-        flex: 1;
-        border: 1px solid black;
-        padding: 8px 0px;
-        margin-right: 10px;
-        text-align: center;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-        &.selected {
-          background-color: $button-color;
-          color: white;
-        }
-      }
-      div:hover {
-        background-color: $button-color; /* Change background color on hover */
-        color: white; /* Change text color on hover */
-      }
-    }
-    .input-options {
-      padding: 0px 20px 0px 20px;
-    }
-    .message_limit {
-      display: block;
-      text-align: right;
-      color: #d2d1d1;
-      margin-right: 10px;
+.right-part {
+  width: 34%;
+  .upper-part {
+    border-bottom: 1px solid pink;
+    font-size: 16px;
+    font-family: mreaves-bold;
+    h2{
+      font-weight: 500;
+      margin-bottom: 8px;
     }
   }
-
-  button[type="submit"] {
-    font-family: mreaves-bold;
-    background-color: $button-color;
-    color: white;
-    font-size: 18px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    width: 100%;
-    border: none;
-    cursor: pointer;
+  .gift-card-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px;
+    .upper-form-group{
+      > label {
+        font-family: mreaves-regular;
+        display: block;
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .description {
+        text-align: start;
+        // color: #666;
+        font-size: 16px;
+        margin-bottom: 40px;
+        width: 92%;
+      }
+      .design-options {
+        // cursor: pointer;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        img {
+          cursor: pointer;
+          max-width: 100%;
+          border-radius: 7px;
+          border: 2px solid transparent; 
+        }
+        img:hover{
+          border: 2px solid $general_pink;
+        }
+      }
+    }
+    .amount-form-group{
+      align-self: normal;
+      >label {
+        font-family: mreaves-regular;
+        display: block;
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .amount-options {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        // justify-content: space-between;
+  
+        div {
+          font-family: mreaves-bold;
+          font-size: 15px;
+          flex: 1;
+          border: 1px solid black;
+          padding: 8px 0px;
+          text-align: center;
+          cursor: pointer;
+          transition: background-color 0.3s, color 0.3s;
+          &.selected {
+            background-color: $button-color;
+            color: white;
+          }
+        }
+        div:hover {
+          background-color: $button-color; /* Change background color on hover */
+          color: white; /* Change text color on hover */
+        }
+      }
+    }
+    .form-group {
+      width: 100%;
+      margin-top: 30px;
+  
+      > label {
+        font-family: mreaves-regular;
+        display: block;
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .inner-form {
+        font-family: mreaves-book;
+        font-size: 16px;
+      }
+      .form-msg {
+        font-family: mreaves-book;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      input,
+      textarea {
+        font-family: mreaves-regular;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 6px 0px;
+        width: 93%;
+        border: none;
+        outline: none;
+        font-weight: normal;
+      }
+      input{
+        color: #495057;
+      }
+      textarea {
+        resize: none;
+        height: 100px;
+        padding: 2px 16px;
+        border-top: 1px solid #d3d3d3;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: #d5d5d5;
+      }
+      .input-options {
+        padding: 0px 20px;
+        .upper-form{
+          margin-top: 20px;
+        }
+        .text-msg{
+          margin-top: 15px;
+        }
+        .send-on{
+          margin-top: 15px;
+        }
+        .name-input{
+          margin-top: 15px;
+        }
+        input{
+          border-bottom: 1px solid #d3d3d3;
+          // width: 100%;
+          padding: 2px 16px;
+        }
+      }
+    }
+    .text-msg{
+      .message_limit {
+        display: block;
+        text-align: right;
+        color: #d2d1d1;
+        // margin-right: 10px;
+        border-bottom: 1px solid #d3d3d3;
+      }
+    }
+  
+    button[type="submit"] {
+      font-family: mreaves-bold;
+      background-color: $button-color;
+      color: white;
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+    }
   }
 }
 
+// hr {
+//   width: 96%;
+//   color: rgb(250, 247, 247);
+// }
+.bottom {
+  margin-right: auto;
+  text-decoration: none;
+  color: $button-color;
+}
+
+
+
+
+
+// starts media query
 
 @media (min-width: 1440px) {
   .container {
