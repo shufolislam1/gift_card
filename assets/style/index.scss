@@ -46,9 +46,9 @@ body {
   gap: 10px;
   >div{
     display: flex;
-    // gap: 10px;
+    gap: 10px;
     >img{
-      width: 50%;
+      width: 49%;
     }
   }
 }
@@ -211,12 +211,13 @@ body {
       }
     }
     .text-msg{
+      border-bottom: 1px solid #d3d3d3;
+      width: 100%;
       .message_limit {
         display: block;
         text-align: right;
         color: #d2d1d1;
         // margin-right: 10px;
-        border-bottom: 1px solid #d3d3d3;
       }
     }
   

@@ -38,9 +38,10 @@ body {
 }
 .top-images > div {
   display: flex;
+  gap: 10px;
 }
 .top-images > div > img {
-  width: 50%;
+  width: 49%;
 }
 
 .top-images img {
@@ -197,11 +198,14 @@ body {
   border-bottom: 1px solid #d3d3d3;
   padding: 2px 16px;
 }
+.right-part .gift-card-form .text-msg {
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%;
+}
 .right-part .gift-card-form .text-msg .message_limit {
   display: block;
   text-align: right;
   color: #d2d1d1;
-  border-bottom: 1px solid #d3d3d3;
 }
 .right-part .gift-card-form button[type=submit] {
   font-family: mreaves-bold;
