@@ -52,7 +52,7 @@ $filter_background :#FDF7F7;
             color: #2b3541;
             font-size: 18px;
             text-decoration: none;
-            // padding: 0.5rem 1rem;
+            padding: 0.5rem 1rem;
             display: block;
             letter-spacing: 1px;
             font-weight: 400;
@@ -340,6 +340,9 @@ $filter_background :#FDF7F7;
   .top-images {
     width: 60%;
   }
+  .main-menu{
+    width: 100%;
+  }
 }
 
 
@@ -359,18 +362,7 @@ $filter_background :#FDF7F7;
     width: 50%;
   }
   .main-menu{
-    margin: 0 auto;
-    text-align: center;
-    width: 90%;
-    .full-menu{
-      .all-buttons{
-        li{
-          a{
-            font-size: 17px;
-          }
-        }
-      }
-    }
+    width: 100%;
   }
 }
 
@@ -391,14 +383,18 @@ $filter_background :#FDF7F7;
     width: 50%;
   }
   .main-menu{
-    margin: 0 auto;
-    text-align: center;
-    width: 90%;
+    width: 100%;
     .full-menu{
       .all-buttons{
         li{
           a{
+            color: #2b3541;
             font-size: 17px;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+            letter-spacing: 1px;
+            font-weight: 400;
           }
         }
       }
@@ -428,6 +424,9 @@ $filter_background :#FDF7F7;
   .virtual-appoinment-btn{
     outline: 1px solid #fff;
     padding: 4px;
+  }
+  .main-menu{
+    display: none;
   }
 }
 @media (max-width: 767px){
@@ -465,7 +464,7 @@ $filter_background :#FDF7F7;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    margin-top: 2rem;
+    margin-top: 0;
   }
 
   .top-images {
