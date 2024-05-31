@@ -159,6 +159,7 @@
   padding: 8px 0px;
   text-align: center;
   cursor: pointer;
+  align-content: center;
   transition: background-color 0.3s, color 0.3s;
 }
 .right-part .gift-card-form .amount-form-group .amount-options div.selected {
@@ -350,12 +351,16 @@
   }
   .right-part {
     width: 100%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 2rem;
   }
   .top-images {
     width: 100%;
+  }
+  .virtual-appoinment-btn {
+    outline: 1px solid #fff;
+    padding: 4px;
   }
 }
 @media (max-width: 767px) {
@@ -367,12 +372,16 @@
   }
   .right-part {
     width: 100%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 2rem;
   }
   .top-images {
     width: 100%;
+    padding: 0;
+  }
+  .main-menu {
+    display: none;
   }
 }
 @media (max-width: 575px) {
@@ -384,11 +393,23 @@
   }
   .right-part {
     width: 100%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 2rem;
   }
   .top-images {
     width: 100%;
+  }
+  .top-images2 img {
+    display: none;
+  }
+  .right-part .gift-card-form .amount-form-group .amount-options div {
+    font-family: mreaves-bold;
+    font-size: 14px;
+    flex: 1;
+    border: 1px solid black;
+    padding: 5px 0px;
+    text-align: center;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=index.css.map */
