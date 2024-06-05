@@ -211,6 +211,7 @@
   height: 75px;
   padding: 2px 16px;
   border-top: 1px solid #d3d3d3;
+  width: -webkit-fill-available;
 }
 .right-part .gift-card-form .form-group input::-moz-placeholder, .right-part .gift-card-form .form-group textarea::-moz-placeholder {
   color: #d5d5d5;
@@ -233,6 +234,7 @@
 }
 .right-part .gift-card-form .form-group .input-options input {
   border-bottom: 1px solid #d3d3d3;
+  width: -webkit-fill-available;
   padding: 2px 16px;
 }
 .right-part .gift-card-form .text-msg {
